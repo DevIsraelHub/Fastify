@@ -1,6 +1,11 @@
 .hero {
   position: relative;
-  background-color: #666fff;
+  background-image: url("src/Images/purple.png");
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: skewX(180deg);
+  background-origin: content-box;
   height: calc(100vh - 80px);
   margin-top: 80px;
   display: flex;

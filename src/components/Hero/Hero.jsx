@@ -9,10 +9,10 @@ const Hero = () => {
   const [slide, setSlide] = useState(0)
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? 2 : (prev) => prev -1)
+    setSlide(slide === 0 ? 1 : (prev) => prev -1)
   } 
   const nextSlide = () => {
-    setSlide(slide === 2 ? 0 : (prev) => prev +1)
+    setSlide(slide === 1 ? 0 : (prev) => prev +1)
   } 
 
   return (
