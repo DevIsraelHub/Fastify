@@ -41,7 +41,7 @@ const Navbar = () => {
             <Sidebar open={open} setOpen={setOpen} />
           </span>
           <Link to={'/'} className="logo">
-            <FaOpencart className="logo__icon" />Fastify
+            <img src="src/Images/shopping-cart.png" alt="" /> Fastify
           </Link>
         </span>
         <div className="list">
