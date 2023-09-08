@@ -17,7 +17,7 @@
   background-color: #fff;
 }
 .navbar .active {
-  color: #8A33FD;
+  color: #2cb6ed;
 }
 .navbar .left {
   display: flex;
@@ -46,7 +46,7 @@
   justify-content: center;
   gap: 0.6rem;
   font-size: 2rem;
-  color: #56cfff;
+  color: #2cb6ed;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
 }
@@ -67,7 +67,7 @@
   gap: 7rem;
 }
 .navbar .right .active {
-  color: #8A33FD;
+  color: #2cb6ed;
 }
 .navbar .right .nav-icon {
   display: flex;
@@ -85,7 +85,7 @@
   background-color: #F6F6F6;
 }
 .navbar .right .nav-icon .icon:hover {
-  color: #8A33FD;
+  color: #2cb6ed;
 }
 .navbar .right .nav-icon .cart-icon {
   position: relative;
@@ -104,7 +104,7 @@
   border-radius: 8px;
   font-size: smaller;
   color: #fff;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 
 @media screen and (max-width: 1400px) {
@@ -144,7 +144,7 @@
     display: none;
   }
   .navbar .right .search:hover {
-    color: #8A33FD;
+    color: #2cb6ed;
   }
 }
 @media screen and (max-width: 600px) {

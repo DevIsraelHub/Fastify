@@ -84,7 +84,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .home .section .container .second .newArrival {
   display: flex;
@@ -113,7 +113,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .home .section .container .third .bigSaving {
   display: grid;
@@ -148,7 +148,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .home .section .container .fourth .forMen {
   display: grid;
@@ -276,7 +276,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .home .section .container .fifth .forWomen {
   margin-bottom: 1.5rem auto;
@@ -319,7 +319,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .home .section .container .sixth .feedbacks {
   width: 100%;

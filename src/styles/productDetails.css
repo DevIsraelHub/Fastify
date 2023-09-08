@@ -104,14 +104,14 @@
   transition: all 0.3s;
 }
 .product-details .product .top .info .size .sizes div:active {
-  background-color: #5a5a5a;
+  background-color: #474747;
   color: #fff;
 }
 .product-details .product .top .info .size .sizes div:hover {
   transform: scale(1.1);
 }
 .product-details .product .top .info .size .sizes .active {
-  background-color: #5a5a5a;
+  background-color: #474747;
   color: #fff;
 }
 .product-details .product .top .info .color {
@@ -159,7 +159,7 @@
   transform: scale(0.9);
 }
 .product-details .product .top .info .btns .cartBtn {
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
   width: 100%;
   color: #fff;
   display: flex;
@@ -183,7 +183,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .product-details .product .middle .container {
   display: flex;
@@ -265,8 +265,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #8A33FD;
-  color: #8A33FD;
+  border: 2px solid #2cb6ed;
+  color: #2cb6ed;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -303,7 +303,7 @@
   width: 5px;
   height: 100%;
   border-radius: 20px;
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
 }
 .product-details .product .right .similar {
   display: grid;

@@ -49,6 +49,7 @@
     @include btnActive;
     @include center;
     gap: .2rem;
+    box-shadow: inset 0px 0px 10px #1f89b3;
 
     .iconCart {
       font-size: 1rem;

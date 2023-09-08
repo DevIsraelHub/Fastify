@@ -61,9 +61,9 @@ const Footer = () => {
         <hr />
         <div className="bottom">
           <div className="left">
-            <Link to={'/'} className='logo'>
-            <FaOpencart className="logo__icon" /> Fastify
-            </Link>
+          <Link to={'/'} className="logo">
+            <img src="src/Images/shopping-cart.png" alt="" /> Fastify
+          </Link>
             <span className='copyright'>
               &copy; Copyright 2023. All Rights Reserved
             </span>

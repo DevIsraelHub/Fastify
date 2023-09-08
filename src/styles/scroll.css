@@ -5,7 +5,7 @@
   z-index: 20;
 }
 .scroll button {
-  background-color: #8A33FD;
+  background-color: #2cb6ed;
   color: #fff;
   border-radius: 50%;
   border: none;
@@ -15,5 +15,5 @@
   justify-content: center;
   width: 2.8rem;
   height: 2.8rem;
-  box-shadow: 0px 2px 10px 0px rgba(139, 51, 253, 0.7137254902);
+  box-shadow: 0px 2px 10px 0px rgba(44, 182, 237, 0.4666666667);
 }/*# sourceMappingURL=scroll.css.map */

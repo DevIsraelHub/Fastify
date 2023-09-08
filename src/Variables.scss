@@ -1,4 +1,4 @@
-$primary: #8A33FD;
+$primary: #2cb6ed;
 $bg-white: #fff;
 $text-white: #fff;
 $dark-gray: #555;
@@ -11,7 +11,7 @@ $semi-black: #333;
 $black: lightbrown;
 $border-color: #e3e3e3;
 $dim-red: #ff000011;
-$secondary: #5a5a5a;
+$secondary: #474747;
 $tranparent: #ffffffcd;
 $pink : #ff2e51;
 
@@ -45,8 +45,12 @@ $round: 50%;
 
 
 @mixin btnActive {
+  &:hover {
+    box-shadow: 0px 0px 7px $primary;
+  }
   &:active {
     transform: scale(0.9);
+    box-shadow: inset 0px 0px 10px #1f89b3;
   }
 }
 

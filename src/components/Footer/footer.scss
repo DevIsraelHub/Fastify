@@ -100,11 +100,16 @@
     
         .logo {
           @include center;
-          gap: .7rem;
-          color: $text-white;
-          font-weight: bold;
+          gap: .6rem;
+          font-size: 2rem;
+          color: #2cb6ed;
+          font-weight: 600;
           font-family: 'Times New Roman', Times, serif;
-          font-size: 24px;
+  
+          img {
+            width: 35px;
+            height: 100%;
+          }
         }
     
         .copyright {

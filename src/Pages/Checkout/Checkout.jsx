@@ -1,11 +1,10 @@
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext } from 'react'
 import '../../styles/checkout.css'
 import CheckoutItem from './CheckoutItem'
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { CartContext } from '../../Context/CartContext'
 
 const Checkout = () => {
-  const paypal = useRef()
   const { cart, total } = useContext(CartContext);
 
   const initialOptions = {
@@ -22,7 +21,7 @@ const Checkout = () => {
           description: "Products shoped from fastify",
           amount: {
             currency_code: "USD",
-            value: 5.00
+            value: total
           },
         },
       ],
