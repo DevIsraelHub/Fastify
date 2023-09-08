@@ -1,0 +1,72 @@
+.second-cards {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .second-cards {
+    width: 100%;
+    height: 20rem;
+  }
+}
+.second-cards:hover button {
+  right: 1rem;
+}
+.second-cards img {
+  width: 100%;
+  height: 16rem;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.second-cards .icons .save {
+  position: absolute;
+  cursor: pointer;
+  top: 0.7rem;
+  right: 0.5rem;
+}
+.second-cards .icon {
+  font-size: 1.2rem;
+}
+.second-cards button {
+  position: absolute;
+  bottom: 4.5rem;
+  right: -15.2rem;
+  border: none;
+  background-color: #ff2e51;
+  color: #fff;
+  width: 6rem;
+  height: 2.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.second-cards button:active {
+  transform: scale(0.9);
+}
+.second-cards .title {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.second-cards .price {
+  display: flex;
+  gap: 5%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #23bd23;
+}
+.second-cards .price .old-price {
+  text-decoration: line-through;
+  font-weight: 500;
+  color: #807D7E;
+}/*# sourceMappingURL=newArrival.css.map */

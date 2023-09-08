@@ -1,0 +1,91 @@
+$primary: #8A33FD;
+$bg-white: #fff;
+$text-white: #fff;
+$dark-gray: #555;
+$text-color: #333;
+$text-gray: #807D7E;
+$light-gray: #F6F6F6;
+$danger: #eb2525;
+$success: #23bd23;
+$semi-black: #333;
+$black: lightbrown;
+$border-color: #e3e3e3;
+$dim-red: #ff000011;
+$secondary: #5a5a5a;
+$tranparent: #ffffffcd;
+$pink : #ff2e51;
+
+// BORDER RADIUS  
+$border-sm: 5px;
+$border-lg: 8px;
+$border-xl: 15px;
+$round: 50%;
+
+
+@mixin border {
+  &::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 0px;
+    width: 5px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: $primary;
+  }
+}
+@mixin hide {
+  opacity: 0;
+  pointer-events: none;
+}
+@mixin show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+
+@mixin btnActive {
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin media-xl {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media screen and (max-width: 850px ){
+    @content;
+  }
+}
+@mixin media-xs {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}

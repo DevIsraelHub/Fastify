@@ -1,0 +1,67 @@
+@import '../../Variables.scss';
+.search {
+  position: relative;
+  width: 38rem;
+  height: 2.7rem;
+  @include flex;
+  background-color: $light-gray;
+  border-radius: $border-lg;
+  color: $text-gray;
+  padding: 0rem 1rem;
+  
+  .search-icon {
+    font-size: 1.2rem;
+  }
+  
+  
+  input {
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+  }
+
+  .true {
+    color:  red;
+  }
+
+  .list {
+    width: 98%;
+    position: absolute;
+    top: 3rem;
+    background-color: $bg-white;
+    padding: 0;
+    left: 1%;
+    max-height: 26rem;
+    overflow-y: auto;
+    opacity: 1;
+    border-bottom-left-radius: $border-lg;
+    border-bottom-right-radius: $border-lg;
+    // pointer-events: none;
+    box-shadow: 5px 7px 5px 3px rgb(0,0,0,0.12);
+    transition: all 0.3s ease;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      color: $text-color;
+      padding: 14px 12px;
+      width: 100%;
+      cursor: pointer;
+      // transition: all .2s linear;
+      // display: none;
+
+      img {
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+      }
+
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+  }
+}

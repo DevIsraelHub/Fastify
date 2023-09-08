@@ -1,0 +1,42 @@
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8039215686);
+  color: #333;
+  transition: all 0.2s ease;
+}
+.save:active {
+  transform: scale(0.9);
+}
+.save .saved {
+  color: #ff2e51;
+  fill: #ff2e51;
+}/*# sourceMappingURL=App.css.map */

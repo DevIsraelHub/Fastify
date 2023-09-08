@@ -1,0 +1,202 @@
+@import '../../Variables.scss';
+
+.shadow {
+  box-shadow: 0px 0px 10px 0px #00000037;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding-inline: 5%;
+  @include flex;
+  z-index: 100;
+  position: fixed;
+  font-weight: 600;
+  top: 0;
+  border-bottom: 2px solid $light-gray;
+  background-color: $bg-white;
+  .active {
+    color: $primary;
+  }
+  // max-width: 1700px;
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+
+    .left-nav {
+      position: relative;
+      @include center;
+      gap: 2rem;
+
+
+      .menu {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+        transition: all .4s ease;
+      }
+
+      .open-menu {
+        transform: rotate(-90deg);
+      }
+  
+      .logo {
+        @include center;
+        gap: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+      }
+    }
+
+    .list {
+      display: flex;
+      font-size: 1rem;
+      gap: 3rem;
+    }
+  }
+
+  .right {
+    display: flex;
+    @include center;
+    gap: 7rem;
+    
+    
+    .active {
+      color: $primary;
+    }
+    .nav-icon {
+      @include center;
+      gap: 1.5rem;
+        
+        .icon {
+          cursor: pointer;
+          color: $text-gray;
+          width: 2.1rem;
+          height: 2.1rem;
+          padding: 6px;
+          border-radius: $border-lg;
+          background-color: $light-gray;
+          
+          &:hover {
+            color: $primary;
+          }
+        }
+
+      .cart-icon {
+        position: relative;
+
+        span {
+          top: -8px;
+          right: -8px;
+          text-align: center;
+          padding-inline: 5px;
+          padding-bottom: 3px;
+          height: 1rem;
+          @include center;
+          position: absolute;
+          border-radius: $border-lg;
+          font-size: smaller;
+          color: $text-white;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@include media-xl {
+  .navbar {
+    .left {
+      gap: 4rem;
+
+      .list {
+        gap: 2rem;
+      }
+    }
+
+    .right {
+      .search {
+        width: 22rem;
+      }
+    }
+  }
+}
+
+@include media-lg {
+  .navbar {
+    .left {
+      .left-nav {
+        .menu {
+          display: block;
+        }
+      }
+      
+      .list {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@include media-md {
+  .navbar {
+    .left {
+      .left-nav {
+        gap: 1rem;
+      }
+    }
+    .right {
+      .search {
+        width: 2.1rem;
+        padding: 3px;
+        margin-right: -5.5rem;
+        cursor: pointer;
+        @include center;
+        height: 2.1rem;
+        input {
+          display: none;
+        }
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@include media-sm {
+  
+}
+
+@include media-xs {
+  .navbar {
+    .left {
+      .left-nav {
+        gap: .5rem;
+        .logo {
+          gap: .4rem;
+          font-size: 1.4rem;
+        }
+        .menu {
+          display: block;
+        }
+      }
+      
+      .list {
+        display: none;
+      }
+    }
+
+    .right {
+      gap: 6rem;
+
+      .nav-icon {
+        gap: .5rem;
+      }
+    }
+  }
+}

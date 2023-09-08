@@ -1,0 +1,39 @@
+@import '../../Variables.scss';
+
+.feedback {
+  width: 100%;
+  height: 17rem;
+  padding: 1rem;
+  line-height: 2   rem;
+  border-radius: $border-lg;
+  border: 1px solid #b9b9b9;
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    img {
+      width: 18%;
+      height: 18%;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      border-radius: $round;
+    }
+  }
+
+  .text {
+    color: $text-color;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      height: 4.1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,192 @@
+@import '../../Variables.scss';
+.check {
+  max-width: 1700px;
+  padding: 100px 5%;
+  margin: 0 auto;
+
+  h1 {
+    position: relative;
+    font-size: 2rem;
+    margin-left: 16px;
+    margin-bottom: 2rem;
+    color: $text-color;
+    @include border;
+  }
+
+  hr {
+    margin: 1.2rem auto;
+    border: 1px solid $border-color;
+
+  }
+
+  main {
+    display: flex;
+    align-items: start;
+    color: $text-color;
+    justify-content: center;
+    @include media-sm {
+      // margin: 0 auto;
+      justify-content: center;
+      gap: 2rem;
+      flex-direction: column;
+    }
+    gap: 5%;
+    .summary {
+      width: 50%;
+      height: 34rem;
+      max-width: 500px;
+      border: 1px solid $border-color;
+      border-radius: $border-lg;
+      padding: 2rem 1rem;
+      overflow: hidden;
+      @include media-sm {
+        width: 100%;
+        margin: 0 auto;
+      }
+      @include media-xs {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 1px solid $border-color;
+      }
+      
+      .orders {
+        width: 100%;
+        padding-right: .5rem;
+        height: 20rem;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          width: 6px;
+          background-color: $light-gray;
+          transform: translateX(20px);
+        }
+        &::-webkit-scrollbar-thumb {
+          width: 5px;
+          border-radius: $border-lg;
+          background-color: $border-color;
+          transform: translateX(20px);
+        }
+
+        
+        .item-body {
+          .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid $light-gray;
+            margin-bottom: .5rem;
+    
+            .details {
+              position: relative;
+              display: flex;
+              gap: 1.5rem;
+    
+              .img {
+                width: 5rem;
+                height: 5.5rem;
+                border-radius: $border-lg;
+                overflow: hidden;
+    
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit:  cover;
+                }
+              }
+    
+              .desc {
+                color: $text-color;
+                width: 70%;
+                line-height: 1.7rem;
+    
+                h3 {
+                  font-size: .9rem;
+                  font-weight: 500;
+                }
+  
+                span {
+                  color: $text-gray;
+                }
+    
+                .color {
+                  font-size: .9rem;
+                  font-weight: lighter;
+                  color: $text-gray;
+    
+                  .flex {
+                    display: flex;
+                    align-items: center;
+                    gap: .3rem;
+        
+                    .bg {
+                      width: 15px;
+                      height: 15px;
+                      border: 1px solid $text-gray;
+                      border-radius: $round;
+                      margin: 2px;
+                      padding: 3px;
+                    }
+        
+                    p {
+                      text-transform: capitalize;
+                    }
+                  }
+                }
+              }
+            }
+    
+            .item-price {
+              font-size: 1.2rem;
+            }    
+          }
+        }
+      }
+      .total {
+        width: 100%;
+        .bottom {
+          width: 100%;
+          margin: 1rem auto;
+          display: flex;
+          justify-content: space-between;
+          
+          .text {
+            font-size: 1.3rem;
+          }
+          &:first-child {
+            font-size: 1.1rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .payment {
+      width: 40%;
+      height: 100%;
+      max-width: 500px;
+      border: 1px solid $border-color;
+      border-radius: $border-lg;
+      padding: 2rem 1rem;
+      @include media-sm {
+        width: 100%;
+        margin: 0 auto;
+      }
+      @include media-xs {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 1px solid $border-color;
+      }
+
+      h2 {
+        padding-bottom: 5rem;
+      }
+      p {
+        color: $text-gray;
+        padding-bottom: 1rem;
+      }
+
+      z-index: 10;
+    }
+  }
+}

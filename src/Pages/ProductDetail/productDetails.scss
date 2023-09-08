@@ -1,0 +1,335 @@
+@import '../../Variables.scss';
+
+.product-details {
+  padding: 0px 7%;
+  max-width: 1700px;
+  margin: 0px auto;
+
+  .product {
+    margin: 0px auto;
+    margin-top: 80px;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      // gap: 2rem;
+      @include media-sm {
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .img {
+        width: 42%;
+        height: 32rem;
+        background-color: $light-gray;
+        @include media-sm {
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .info {
+        width: 50%;
+        padding-top: 1rem;
+        color: $text-color;
+        line-height: 2.5rem;
+        @include media-sm {
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        .reference {
+          font-weight: 600;
+          color: $text-gray;
+          font-weight: lighter;
+          font-size: .9rem;
+        }
+
+        .title {
+          font-size: 2rem;
+          text-transform: capitalize;
+          margin-block: 1rem;
+          max-width: 80%;
+        }
+
+        .ratings {
+          width: 60%;
+          margin-bottom: 1rem;
+          @include media-sm {
+            width: 90%;
+          }
+        }
+
+        .amount {
+          h3 {
+            font-weight: 500;
+            display: flex;
+            color: $text-gray;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+              color: $danger;
+              font-size: 30px;
+            }
+          }
+        }
+
+        .size {
+          font-weight: 600;
+          margin-bottom: 1.5rem;
+
+          h4 {
+            color: $dark-gray;
+            font-weight: 500;
+            margin-bottom: .8rem;
+          }
+
+          .sizes {
+            max-width: 80%;
+            display: flex;
+            gap: 1.5rem;
+
+            div {
+              border: 1px solid gray;
+              width: 35px;
+              height: 35px;
+              font-size: .8rem;
+              @include center;
+              cursor: pointer;
+              border-radius: $border-lg;
+              transition: all 0.3s;
+            }
+
+            div:active {
+              background-color: $secondary;
+              color: $text-white;
+            }
+
+            div:hover {
+              transform: scale(1.1);
+            }
+
+            .active {
+              background-color: $secondary;
+              color: $text-white;
+            }
+          }
+
+        }
+
+        .color {
+          margin-bottom: 2.5rem;
+
+          h4 {
+            color: $dark-gray;
+            font-weight: 500;
+          }
+
+          .flex {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+
+            .bg {
+              width: 20px;
+              height: 20px;
+              border: 1px solid $text-gray;
+              border-radius: $border-lg;
+              margin: 5px;
+              padding: 3px;
+            }
+
+            p {
+              text-transform: capitalize;
+            }
+          }
+
+        }
+
+        .btns {
+          display: flex;
+          align-items: center;
+
+          button {
+            width: 10rem;
+            height: 3.1rem;
+            border-radius: $border-lg;
+            margin-right: 1.5rem;
+            font-size: 1.05rem;
+            font-weight: 500;
+            gap: .8rem;
+            border: none;
+            transition: all .2s ease;
+
+            &:hover {
+              filter: saturate(65%);
+            }
+
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+
+          .cartBtn {
+            background-color: $primary;
+            width: 100%;
+            color: #fff;
+            @include center;
+          }
+        }
+      }
+    }
+
+    .middle {
+      margin: 5rem auto;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-left: 1rem;
+        position: relative;
+        @include border;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        @include media-sm {
+          flex-direction: column;
+        }
+
+        .desc {
+          width: 55%;
+          @include media-md {
+            width: 45%;
+          }
+          @include media-sm {
+            width: 100%;
+          }
+
+          p {
+            color: $text-gray;
+            margin: 1rem auto;
+          }
+        }
+
+        .video {
+          position: relative;
+          margin-top: 1rem;
+          border-radius: $border-xl;
+          overflow: hidden;
+          width: 40%;
+          height: 19rem;
+          background-position: top;
+          @include media-md {
+            width: 50%;
+          }
+          @include media-sm {
+            width: 100%;
+          }
+
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #00000093;
+            width: 100%;
+            height: 100%;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .info {
+            .views {
+              @include center;
+              gap: .5rem;
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              color: $light-gray;
+            }
+
+            .icon {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              cursor: pointer;
+              background-color: $light-gray;
+              padding: 1.2rem;
+              font-size: 1.5rem;
+              @include center;
+              border: 2px solid $primary;
+              color: $primary;
+              border-radius: $round;
+              transition: all .3s ease;
+
+              &:hover {
+                padding: 1.5rem;
+              }
+
+              &:active {
+                padding: 1.2rem;
+              }
+            }
+
+            .text {
+              position: absolute;
+              bottom: 1rem;
+              left: 50%;
+              transform: translateX(-50%);
+              color: $light-gray;
+              font-size: 1.1rem;
+              font-weight: 600;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      padding-bottom: 4rem;
+
+      h1 {
+        position: relative;
+        font-size: 2rem;
+        color: $text-color;
+        margin-left: 16px;
+        @include border;
+      }
+
+      .similar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        row-gap: 3.5rem;
+        margin: 1.5rem auto;
+
+        @include media-lg {
+          grid-template-columns: repeat(4, 1fr);
+          @include media-md {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @include media-sm {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include media-xs {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+      }
+    }
+  }
+}

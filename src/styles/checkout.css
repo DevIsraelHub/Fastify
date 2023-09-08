@@ -1,0 +1,186 @@
+.check {
+  max-width: 1700px;
+  padding: 100px 5%;
+  margin: 0 auto;
+}
+.check h1 {
+  position: relative;
+  font-size: 2rem;
+  margin-left: 16px;
+  margin-bottom: 2rem;
+  color: #333;
+}
+.check h1::after {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0px;
+  width: 5px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #8A33FD;
+}
+.check hr {
+  margin: 1.2rem auto;
+  border: 1px solid #e3e3e3;
+}
+.check main {
+  display: flex;
+  align-items: start;
+  color: #333;
+  justify-content: center;
+  gap: 5%;
+}
+@media screen and (max-width: 850px) {
+  .check main {
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+.check main .summary {
+  width: 50%;
+  height: 34rem;
+  max-width: 500px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 850px) {
+  .check main .summary {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .check main .summary {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+  }
+}
+.check main .summary .orders {
+  width: 100%;
+  padding-right: 0.5rem;
+  height: 20rem;
+  overflow-y: auto;
+}
+.check main .summary .orders::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F6F6F6;
+  transform: translateX(20px);
+}
+.check main .summary .orders::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 8px;
+  background-color: #e3e3e3;
+  transform: translateX(20px);
+}
+.check main .summary .orders .item-body .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #F6F6F6;
+  margin-bottom: 0.5rem;
+}
+.check main .summary .orders .item-body .item .details {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+}
+.check main .summary .orders .item-body .item .details .img {
+  width: 5rem;
+  height: 5.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.check main .summary .orders .item-body .item .details .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.check main .summary .orders .item-body .item .details .desc {
+  color: #333;
+  width: 70%;
+  line-height: 1.7rem;
+}
+.check main .summary .orders .item-body .item .details .desc h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.check main .summary .orders .item-body .item .details .desc span {
+  color: #807D7E;
+}
+.check main .summary .orders .item-body .item .details .desc .color {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: #807D7E;
+}
+.check main .summary .orders .item-body .item .details .desc .color .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.check main .summary .orders .item-body .item .details .desc .color .flex .bg {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #807D7E;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 3px;
+}
+.check main .summary .orders .item-body .item .details .desc .color .flex p {
+  text-transform: capitalize;
+}
+.check main .summary .orders .item-body .item .item-price {
+  font-size: 1.2rem;
+}
+.check main .summary .total {
+  width: 100%;
+}
+.check main .summary .total .bottom {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.check main .summary .total .bottom .text {
+  font-size: 1.3rem;
+}
+.check main .summary .total .bottom:first-child {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.check main .payment {
+  width: 40%;
+  height: 100%;
+  max-width: 500px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  z-index: 10;
+}
+@media screen and (max-width: 850px) {
+  .check main .payment {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .check main .payment {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+  }
+}
+.check main .payment h2 {
+  padding-bottom: 5rem;
+}
+.check main .payment p {
+  color: #807D7E;
+  padding-bottom: 1rem;
+}/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: .3rem;
+  margin-left: -5px;
+
+  span {
+    color: gold;
+    fill: gold;
+    transform: scale(.9);
+    margin-right: 0.2rem;
+  }
+  
+  p {
+    font-size: .95rem;
+    font-weight: 600;
+  }
+}

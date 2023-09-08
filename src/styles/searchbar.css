@@ -1,0 +1,57 @@
+.search {
+  position: relative;
+  width: 38rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+  color: #807D7E;
+  padding: 0rem 1rem;
+}
+.search .search-icon {
+  font-size: 1.2rem;
+}
+.search input {
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.search .true {
+  color: red;
+}
+.search .list {
+  width: 98%;
+  position: absolute;
+  top: 3rem;
+  background-color: #fff;
+  padding: 0;
+  left: 1%;
+  max-height: 26rem;
+  overflow-y: auto;
+  opacity: 1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 5px 7px 5px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+.search .list a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: #333;
+  padding: 14px 12px;
+  width: 100%;
+  cursor: pointer;
+}
+.search .list a img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+.search .list a:hover {
+  background-color: #F6F6F6;
+}/*# sourceMappingURL=searchbar.css.map */

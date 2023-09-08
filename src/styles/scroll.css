@@ -1,0 +1,19 @@
+.scroll {
+  position: fixed;
+  bottom: 3rem;
+  right: 0.7rem;
+  z-index: 20;
+}
+.scroll button {
+  background-color: #8A33FD;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  box-shadow: 0px 2px 10px 0px rgba(139, 51, 253, 0.7137254902);
+}/*# sourceMappingURL=scroll.css.map */

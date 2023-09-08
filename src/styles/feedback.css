@@ -1,0 +1,32 @@
+.feedback {
+  width: 100%;
+  height: 17rem;
+  padding: 1rem;
+  line-height: 2 rem;
+  border-radius: 8px;
+  border: 1px solid #b9b9b9;
+}
+.feedback .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.feedback .head img {
+  width: 18%;
+  height: 18%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.feedback .text {
+  color: #333;
+}
+.feedback .text h3 {
+  margin-bottom: 1rem;
+}
+.feedback .text p {
+  height: 4.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=feedback.css.map */

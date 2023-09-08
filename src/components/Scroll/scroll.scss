@@ -1,0 +1,19 @@
+@import '../../Variables.scss';
+.scroll {
+  position: fixed;
+  bottom: 3rem;
+  right: .7rem;
+  z-index: 20;
+
+  button {
+    background-color: $primary;
+    color: $text-white;
+    border-radius: $round;
+    border: none;
+    font-size: 1.2rem;
+    @include center;
+    width: 2.8rem;
+    height: 2.8rem;
+    box-shadow: 0px 2px 10px 0px #8b33fdb6;
+  }
+}
