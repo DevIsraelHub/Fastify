@@ -26,41 +26,6 @@ import printed from './Images/printed t-shirt.png'
 import oversized from './Images/men oversized t-shirt.png'
 import redHeart from './Images/red hat.jpg'
 
-// export const newArrivals = [
-//   {
-//     id: 1,
-//     image: blackDress,
-//     title: 'women balenciaga sweater',
-//     price: 53.33,
-//     color: 'black',
-//     desc: 'Original balenciaga women sweater for luxury and wheather temprature, made with pride from the USA'
-//   },
-//   {
-//     id: 2,
-//     image: turtleNeck,
-//     title: 'men turtle neck sleeve',
-//     price: 13.14,
-//     color: 'red',
-//     desc: 'Original men\'s dark red turle neck sleeve wear made in the USA to the perfection of our customer\'s'
-//   },
-//   {
-//     id: 3,
-//     image: 'src/Images/top.jpg',
-//     title: 'Excellent',
-//     price: 12,
-//     color: 'white',
-//     desc: 'New Design Every Week'
-//   },
-//   {
-//     id: 4,
-//     title: 'Problem Solving',
-//     image: 'src/Images/orange dress.jpg',
-//     price: 19,
-//     color: 'white',
-//     desc: 'New Design Every Week'
-//   }
-// ];
-
 export const bigSavingZone = [
   {
     id: 1,
