@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { CartContext } from '../../Context/CartContext';
 
 const Cards = ({product}) => {
-  const { cart, addToCart, itemAmount } = useContext(CartContext) 
+  const { cart, addToCart, itemAmount } = useContext(CartContext)
   const [saved, setSaved] = useState(false)
   const onSave = () => {
     setSaved(prev => !prev)

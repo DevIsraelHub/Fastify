@@ -67,7 +67,9 @@
     display: flex;
     @include center;
     gap: 7rem;
-    
+    .search {
+      width: 20rem;
+    }
     
     .active {
       color: $primary;
@@ -122,11 +124,11 @@
       }
     }
 
-    .right {
-      .search {
-        width: 22rem;
-      }
-    }
+    // .right {
+    //   .search {
+    //     width: 100%;
+    //   }
+    // }
   }
 }
 

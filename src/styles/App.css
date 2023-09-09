@@ -33,8 +33,12 @@ button {
   color: #333;
   transition: all 0.2s ease;
 }
+.save:hover {
+  box-shadow: 0px 0px 7px #2cb6ed;
+}
 .save:active {
   transform: scale(0.9);
+  box-shadow: inset 0px 0px 10px #1f89b3;
 }
 .save .saved {
   color: #ff2e51;

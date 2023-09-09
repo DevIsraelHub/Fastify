@@ -10,7 +10,7 @@ const Checkout = () => {
   const initialOptions = {
     clientId: "AXRSw6TTG2Jo2shFmQK2uYPoeNgsWgDcO0yRD6Gulhq_6fI474qER7MaTsFFy_XXji2sSVVCAb0X9k91&currency=USD",
     currency: "USD",
-    intent: "capture",
+    intent: "CAPTURE",
   };
 
   const createOrder = (data, actions, err) => {

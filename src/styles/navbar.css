@@ -66,6 +66,9 @@
   justify-content: center;
   gap: 7rem;
 }
+.navbar .right .search {
+  width: 20rem;
+}
 .navbar .right .active {
   color: #2cb6ed;
 }
@@ -113,9 +116,6 @@
   }
   .navbar .left .list {
     gap: 2rem;
-  }
-  .navbar .right .search {
-    width: 22rem;
   }
 }
 @media screen and (max-width: 1200px) {

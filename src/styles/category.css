@@ -352,10 +352,10 @@
   font-size: 1.2rem;
 }
 .category .right .head .search:active {
-  border-color: #8A33FD;
+  border-color: #2cb6ed;
 }
 .category .right .head .active {
-  border: 1px solid #8A33FD;
+  border: 1px solid #2cb6ed;
 }
 .category .right .main {
   display: grid;
