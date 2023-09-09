@@ -58,7 +58,6 @@ const Navbar = () => {
       <div className="right">
         <SearchBar />
         <div className="nav-icon">
-          <CgProfile className='icon' />
           <FiHeart className='icon' />
           <NavLink to={'/cart'} className="cart-icon">
             <FiShoppingCart className='icon' />
