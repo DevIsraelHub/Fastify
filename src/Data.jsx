@@ -20,71 +20,81 @@ import blackDress from './Images/black dreess.jpg'
 import pinkHoodie from './Images/women pink hoodie.png'
 import joseph from './Images/joseph.jpg'
 import emeka from './Images/emeka.jpg'
+import joggers from './Images/cargo joggers girl.png'
+import urban from './Images/urban shirt.png'
+import printed from './Images/printed t-shirt.png'
+import oversized from './Images/men oversized t-shirt.png'
+import redHeart from './Images/red hat.jpg'
 
-export const newArrivals = [
-  {
-    id: 1,
-    image: blackDress,
-    title: 'women balenciaga sweater',
-    price: 53.33,
-    color: 'black',
-    desc: 'Original balenciaga women sweater for luxury and wheather temprature, made with pride from the USA'
-  },
-  {
-    id: 2,
-    image: turtleNeck,
-    title: 'men turtle neck sleeve',
-    price: 13.14,
-    color: 'red',
-    desc: 'Original men\'s dark red turle neck sleeve wear made in the USA to the perfection of our customer\'s'
-  },
-  {
-    id: 3,
-    image: 'src/Images/top.jpg',
-    title: 'Excellent',
-    price: 12,
-    color: 'white',
-    desc: 'New Design Every Week'
-  },
-  {
-    id: 4,
-    title: 'Problem Solving',
-    image: 'src/Images/orange dress.jpg',
-    price: 19,
-    color: 'white',
-    desc: 'New Design Every Week'
-  }
-];
+// export const newArrivals = [
+//   {
+//     id: 1,
+//     image: blackDress,
+//     title: 'women balenciaga sweater',
+//     price: 53.33,
+//     color: 'black',
+//     desc: 'Original balenciaga women sweater for luxury and wheather temprature, made with pride from the USA'
+//   },
+//   {
+//     id: 2,
+//     image: turtleNeck,
+//     title: 'men turtle neck sleeve',
+//     price: 13.14,
+//     color: 'red',
+//     desc: 'Original men\'s dark red turle neck sleeve wear made in the USA to the perfection of our customer\'s'
+//   },
+//   {
+//     id: 3,
+//     image: 'src/Images/top.jpg',
+//     title: 'Excellent',
+//     price: 12,
+//     color: 'white',
+//     desc: 'New Design Every Week'
+//   },
+//   {
+//     id: 4,
+//     title: 'Problem Solving',
+//     image: 'src/Images/orange dress.jpg',
+//     price: 19,
+//     color: 'white',
+//     desc: 'New Design Every Week'
+//   }
+// ];
 
 export const bigSavingZone = [
   {
     id: 1,
-    image: 'src/Images/cargo joggers girl.png',
+    image: joggers,
     title: 'Improving',
+    category: 'savingZone',
     desc: 'New Design Every Week'
   },
   {
     id: 2,
-    image: 'src/Images/urban shirt.png',
+    image: urban,
     title: 'Responsive',
+    category: 'savingZone', 
     desc: 'New Design Every Week'
   },
   {
     id: 3,
-    image: 'src/Images/printed t-shirt.png',
+    image: printed,
     title: 'Problem Solving',
+    category: 'savingZone', 
     desc: 'New Design Every Week'
   },
   {
     id: 4,
-    image: 'src/Images/men oversized t-shirt.png',
+    image: oversized,
     title: 'Excellent',
+    category: 'savingZone', 
     desc: 'New Design Every Week'
   },
   {
     id: 5,
-    image: 'src/Images/red hat.jpg',
+    image: redHeart,
     title: 'Awesome',
+    category: 'savingZone', 
     desc: 'New Design Every Week'
   }
 ];

@@ -3,15 +3,14 @@ import Rating from '../../components/Rating/Rating'
 import { FiShoppingCart } from 'react-icons/fi'
 import { useState } from 'react'
 import Cards from '../../components/Cards/Cards'
-import { allProduct, newArrivals } from '../../Data'
+import { allProduct} from '../../Data'
 import { useParams } from 'react-router-dom'
 import '../../styles/ProductDetails.css'
 import { FaEye, FaPlay } from 'react-icons/fa'
 import { CartContext } from '../../Context/CartContext'
 
 const ProductDetail = () => {
-  const { addToCart, increaseAmount, decreaseAmount } = useContext(CartContext);
-  const [quantity, setQuantity] = useState(1)
+  const { addToCart } = useContext(CartContext);
 
   const { id } = useParams()
   // getting the single product based on the id

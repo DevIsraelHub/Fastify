@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url("src/Images/purple.png");
+  background: linear-gradient(40deg, #2cb6ed 20%, blue 50%, aqua 95%);
   background-position: 0px;
   background-repeat: no-repeat;
   background-size: cover;

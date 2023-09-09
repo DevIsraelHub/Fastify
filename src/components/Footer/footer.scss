@@ -102,13 +102,24 @@
           @include center;
           gap: .6rem;
           font-size: 2rem;
-          color: #2cb6ed;
+          background: linear-gradient(40deg, $primary 25%, #2323f6 20%, aqua 65%);
+          color: transparent;
+          line-height: 32px;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
           font-weight: 600;
           font-family: 'Times New Roman', Times, serif;
+          @include media-sm {
+            font-size: 1.3rem;
+          }
   
           img {
             width: 35px;
             height: 100%;
+            @include media-sm {
+              width: 25px;
+            }
           }
         }
     

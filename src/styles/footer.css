@@ -90,13 +90,28 @@
   justify-content: center;
   gap: 0.6rem;
   font-size: 2rem;
-  color: #2cb6ed;
+  background: linear-gradient(40deg, #2cb6ed 25%, #2323f6 20%, aqua 65%);
+  color: transparent;
+  line-height: 32px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 850px) {
+  .footer .container .bottom .left .logo, .footer .container .icon .left .logo {
+    font-size: 1.3rem;
+  }
 }
 .footer .container .bottom .left .logo img, .footer .container .icon .left .logo img {
   width: 35px;
   height: 100%;
+}
+@media screen and (max-width: 850px) {
+  .footer .container .bottom .left .logo img, .footer .container .icon .left .logo img {
+    width: 25px;
+  }
 }
 .footer .container .bottom .left .copyright, .footer .container .icon .left .copyright {
   white-space: nowrap;

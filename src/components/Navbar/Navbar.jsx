@@ -10,6 +10,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import SearchBar from '../SearchBar/SearchBar';
 import { CartContext } from '../../Context/CartContext';
 import { allProduct } from '../../Data';
+import logo from '../../Images/shopping-cart.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -41,7 +42,7 @@ const Navbar = () => {
             <Sidebar open={open} setOpen={setOpen} />
           </span>
           <Link to={'/'} className="logo">
-            <img src="src/Images/shopping-cart.png" alt="" /> Fastify
+            <img src={logo} alt="logo" /> Fastify
           </Link>
         </span>
         <div className="list">

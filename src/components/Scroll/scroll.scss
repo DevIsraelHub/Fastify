@@ -6,7 +6,7 @@
   z-index: 20;
 
   button {
-    background-color: $primary;
+    background: linear-gradient($primary, blue);
     color: $text-white;
     border-radius: $round;
     border: none;

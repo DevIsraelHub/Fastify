@@ -19,7 +19,6 @@ const Hero = () => {
     <div className='hero'>
       <div className="container" style={{transform:`translateX(-${slide * 100}vw)`}}>
         <img src={hero} alt="hero image" />
-        <img src={hero} alt="hero image" />
       </div>
       <div className="prev" onClick={prevSlide}>
         <MdArrowBackIos className='prev' />

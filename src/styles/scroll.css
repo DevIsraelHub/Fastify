@@ -5,7 +5,7 @@
   z-index: 20;
 }
 .scroll button {
-  background-color: #2cb6ed;
+  background: linear-gradient(#2cb6ed, blue);
   color: #fff;
   border-radius: 50%;
   border: none;
