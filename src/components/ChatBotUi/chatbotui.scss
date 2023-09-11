@@ -3,7 +3,7 @@
 .chat {
   position: fixed;
   bottom: 6rem;
-  right: 1rem;
+  right: -50rem;
   border-radius: $border-xl;
   color: #000;
   border: 1px solid $border-color;
@@ -137,8 +137,6 @@
     }
     
     .right {
-      margin-bottom: -.2rem;
-      margin-top: -.2rem;
       margin-left: auto;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 3px;
@@ -274,5 +272,5 @@ border-bottom-left-radius: 50%;
   }
 }
 .chat-active {
-  right: -50rem;
+  right: 1rem;
 }

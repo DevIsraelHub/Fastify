@@ -1,7 +1,7 @@
 .chat {
   position: fixed;
   bottom: 6rem;
-  right: 1rem;
+  right: -50rem;
   border-radius: 15px;
   color: #000;
   border: 1px solid #e3e3e3;
@@ -127,8 +127,6 @@
   border-bottom-left-radius: 20px;
 }
 .chat .output .right {
-  margin-bottom: -0.2rem;
-  margin-top: -0.2rem;
   margin-left: auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 3px;
@@ -250,5 +248,5 @@
 }
 
 .chat-active {
-  right: -50rem;
+  right: 1rem;
 }/*# sourceMappingURL=chatbotui.css.map */
