@@ -63,9 +63,14 @@ const ChatBotUi = () => {
           </button>
         </form>
       </div>
-      {open && <div onClick={handleClick} title='Chat with us' className='chat-btn'>
-        <AiFillWechat className='icon' />
-      </div>}
+      {open &&
+        <div className='button'>
+          <p className='chat-text'>Customer Support 🧑‍💻</p> 
+          <div onClick={handleClick} title='Chat with us' className='chat-btn'>
+            <AiFillWechat className='icon' />
+          </div>
+        </div>
+      }
     </div>
   )
 }

@@ -178,6 +178,30 @@
   font-size: 1.2rem;
 }
 
+.button:hover .chat-text {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.chat-text {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  bottom: 2rem;
+  height: 3rem;
+  padding-inline: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 4.7rem;
+  background-color: #fff;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2078431373);
+}
+
 .chat-btn {
   position: fixed;
   border: 1px solid #fff;
