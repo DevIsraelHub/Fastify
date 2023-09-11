@@ -53,13 +53,9 @@ const ChatBotUi = () => {
         <div className="output">
           <p className='left'>Hello👋 </p>
           <p className='left'>How can I help? </p>
+            {message.length > 0 && <small>{time.toLocaleTimeString()}</small>}
           {message.map(item => {
-            return (
-              <>
-                <p className='right'>{item.text}</p>
-                <small>{time.toLocaleTimeString()}</small>
-              </>
-            )
+            return <p className='right'>{item.text}</p>
           })}
           <div ref={scrollRef} />
         </div>
@@ -73,7 +69,7 @@ const ChatBotUi = () => {
           </button>
         </form>
       </div>
-      {open &&
+      {!open &&
         <div className='button'>
           <p className='chat-text'>Customer Support 🧑‍💻</p> 
           <div onClick={handleClick} title='Chat with us' className='chat-btn'>
