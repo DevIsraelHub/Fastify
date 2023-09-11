@@ -11,6 +11,11 @@ const ChatBotUi = () => {
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [message, setMessage] = useState([])
+  const [time, setTime] = useState(new Date())
+
+  useEffect(() => {
+    setInterval(() => setTime(new Date()), 100)
+  }, [])
   const scrollRef = useRef()
 
   const handleQuery = () => {
@@ -49,7 +54,12 @@ const ChatBotUi = () => {
           <p className='left'>Hello👋 </p>
           <p className='left'>How can I help? </p>
           {message.map(item => {
-            return <p className='right'>{item.text}</p>
+            return (
+              <>
+                <p className='right'>{item.text}</p>
+                <small>{time.toLocaleTimeString()}</small>
+              </>
+            )
           })}
           <div ref={scrollRef} />
         </div>

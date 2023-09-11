@@ -101,6 +101,10 @@
   background-color: rgba(185, 185, 185, 0.7254901961);
   border-radius: 30px;
 }
+.chat .output small {
+  font-size: 10px;
+  margin: 0 auto;
+}
 .chat .output p {
   background-color: #F6F6F6;
   color: #333;
