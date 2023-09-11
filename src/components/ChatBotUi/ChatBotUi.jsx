@@ -39,7 +39,7 @@ const ChatBotUi = () => {
           </div>
           <div className="text">
             <p>Chat with our</p>
-            <h3>Customer Care</h3>
+            <h3>Customer Support</h3>
           </div>
           <div onClick={handleClick} title='close' className="close">
             <IoIosArrowDown className='icon' />
