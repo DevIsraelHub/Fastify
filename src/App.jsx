@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import './styles/App.css'
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import BackToTop from './components/Scroll/BackToTop';
+import ChatBotUi from './components/ChatBotUi/ChatBotUi';
 import Cart from './Pages/Cart/Cart';
 import NotFound from './Pages/NotFound/NotFound';
 import Checkout from './Pages/Checkout/Checkout';
@@ -27,6 +28,7 @@ function App() {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <BackToTop />
+      <ChatBotUi />
       <Footer />
     </div>
   )

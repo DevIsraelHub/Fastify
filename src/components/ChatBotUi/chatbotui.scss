@@ -1,0 +1,241 @@
+@import '../../variables';
+
+.chat {
+  position: fixed;
+  bottom: 6rem;
+  right: 1rem;
+  border-radius: $border-xl;
+  color: #000;
+  border: 1px solid $border-color;
+  width: 20rem;
+  height: 24rem;
+  margin: 0 auto;
+  z-index: 1000;
+  box-shadow: 0px 10px 15px #00000042;
+  background-color: #fff; 
+  transition: all .2s ease;
+  overflow: hidden;
+  transition: all 1s ease;
+
+  .profile {
+    background: linear-gradient(to right, #666fff, $primary 50%);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 5%;
+
+    .profile-logo {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: .6rem;
+      background-color: #fff;
+      border-radius: 50%;
+      @include center;
+      position: relative;
+
+      span {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        bottom: 1px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: #00ec00;
+        right: 1px;
+      }
+      
+      img {
+        width: 70%;
+        height: 70%;
+      }
+    }
+
+    .text {
+      color: #fff;
+      line-height: 1.2rem;
+      margin-right: auto;
+      p {
+        font-size: .9rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+
+    .close {
+      width: 2.5rem;
+      height: 2.5rem;
+      // background-color: red;
+      cursor: pointer;
+      border-radius: 50%;
+      @include center;
+      transform: rotate(-90deg);
+      transition: all .3s ease;
+      &:hover {
+        background-color: #ffffff56;
+      }
+      &:active {
+        background-color: $primary;
+      }
+
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .output {
+    position: relative;
+    height: 15.7rem;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    margin-block: 5px;
+    gap: .8rem;
+    margin-inline-end: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #b9b9b9b9;
+      border-radius: 30px;
+    }
+
+    p {
+      background-color: $light-gray;
+      color: $text-color;
+      font-weight: 500;
+      padding: .5rem .7rem;
+      width: fit-content;
+      padding-bottom: .6rem;
+      border-top-right-radius: 20px;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      border-top-left-radius: 20px;
+      max-width: 90%;
+      z-index: -1;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      border-bottom-right-radius: 20px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 20px;
+    }
+    
+    .right {
+      margin-left: auto;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  .send {
+    height: 3.3rem;
+    border-radius:  $border-xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin-inline: 7px;
+    border: 1px solid $border-color;
+    z-index: 1000;
+    
+    input {
+      width: 90%;
+      height: 100%;
+      font-size: 1rem;
+      z-index: 100;
+      font-weight: 400;
+      text-indent: 15px;
+      background: transparent;
+      color: $text-color;
+      width: 80%;
+    }
+
+    button {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: .5rem;
+      border-radius: $border-xl;
+      border: none;
+      background-color: $primary;
+      @include center;
+      border: 1px solid $primary;
+      transition: all .2s ease;
+      z-index: 100;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: #fff;
+
+        .icon {
+          color: $primary;
+        }
+      }
+
+      &:active {
+        transform: scale(.9);
+      }
+
+      .icon {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+}
+
+.chat-btn {
+  position: fixed;
+  border: 1px solid #fff;
+  bottom: 2rem;
+  right: 1rem;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 4px;
+  color: #000;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 10px 15px #2393c095;
+  background-color: $primary; 
+  transition: all .2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(.9);
+  }
+
+  .icon {
+    width: 2.3rem;
+    color: #fff;
+    height: 2.3rem;
+  }
+  .active {
+    border-color: $primary;
+    background-color: #fff;    
+    .icon {
+      color: $primary;
+    }
+  }
+}
+.chat-active {
+  right: -50rem;
+}
